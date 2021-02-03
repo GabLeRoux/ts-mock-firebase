@@ -7,6 +7,7 @@ import {
   SnapshotOptions,
 } from '@firebase/firestore-types';
 import MockDocumentReference from './MockDocumentReference';
+import { MockTimestamp } from './MockTimestamp';
 import { getFieldValueFromData } from './utils';
 
 /**
@@ -23,7 +24,11 @@ export default class MockQueryDocumentSnapshot<T extends DocumentData = any> imp
    *
    * @param _query The ID of the document for which this `DocumentSnapshot` contains data.
    */
-  public constructor(public _query: MockDocumentReference<T>, ) { }
+  public constructor(public _query: MockDocumentReference<T>, ) {
+    this.createTime = MockTimestamp.fromDate(new Date());
+    this.updateTime = MockTimestamp.fromDate(new Date());
+    this.readTime = MockTimestamp.fromDate(new Date());
+  }
 
   public get ref() {
     return this._query;
