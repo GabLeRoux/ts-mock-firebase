@@ -1,6 +1,6 @@
 {
   "name": "mock-firebase-ts",
-  "version": "v2.4.0",
+  "version": "v2.5.0",
   "description": "Mock objects for Firebase",
   "main": "lib/index.js",
   "scripts": {
