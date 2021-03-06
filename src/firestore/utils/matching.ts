@@ -126,6 +126,15 @@ function doesRuleMatch<T>(rule: MockQueryWhereRule, doc: MockDocumentReference<T
       }
       break;
     }
+    case 'in': {
+      if (!Array.isArray(value)) {
+        throw new MockFirebaseValidationError(`Error: Value ${value} is not an array.`);
+      }
+      if (value.indexOf(field) < 0) {
+        return false;
+      }
+      break;
+    }
     default:
       throw new Error(`Unidentified where operation: ${opStr}`);
   }
