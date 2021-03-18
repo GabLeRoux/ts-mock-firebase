@@ -403,7 +403,7 @@ function validateUpdateData(path: string, fieldValue: any) {
     const props = Object.getOwnPropertyNames(source);
     for (const fieldName of props) {
       const value = source[fieldName];
-      if (typeof value === 'object') {
+      if (value && typeof value === 'object') {
         validateUpdateObject(path + '.' + fieldName, root, value);
       }
     }
