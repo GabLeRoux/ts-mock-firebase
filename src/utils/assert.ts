@@ -19,7 +19,7 @@ import { CONSTANTS } from './constants';
 
 /**
  * Throws an error if the provided assertion is falsy
- * @param {*} assertion The assertion to be tested for falsiness
+ * @param {*} assertion The assertion to be tested for falseness
  * @param {!string} message The message to display if the check fails
  */
 export const assert = (assertion: any, message: string) => {

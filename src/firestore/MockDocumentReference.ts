@@ -81,7 +81,7 @@ export default class MockDocumentReference<T = DocumentData> implements Document
   }
 
   public mocker: DocumentMocker<T>;
-  // if data does not exists, the document will be treated is if it does not exists
+  // if data does not exist, the document will be treated is if it does not exist
 
   private _data?: T;
 

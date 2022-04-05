@@ -68,7 +68,7 @@ interface MockQueryRules {
 
   /**
    * Define the set of field values to define the first document ot a document before the
-   * the first document to be filtered on result set. Field values define matches for fields
+   * first document to be filtered on result set. Field values define matches for fields
    * defined in order fields.
    *
    * @type {MockQueryStartRule}
@@ -187,7 +187,7 @@ export default class MockQuery<T = DocumentData> implements Query<T> {
   /**
    * Creates and returns a new Query that starts at the provided document
    * (inclusive). The starting position is relative to the order of the query.
-   * The document must contain all of the fields provided in the orderBy of
+   * The document must contain all the fields provided in the orderBy of
    * this query.
    *
    * @param snapshot   The snapshot of the document to start at.
@@ -215,7 +215,7 @@ export default class MockQuery<T = DocumentData> implements Query<T> {
   /**
    * Creates and returns a new Query that starts after the provided document
    * (exclusive). The starting position is relative to the order of the query.
-   * The document must contain all of the fields provided in the orderBy of
+   * The document must contain all the fields provided in the orderBy of
    * this query.
    *
    * @param snapshot The snapshot of the document to start after.
@@ -241,7 +241,7 @@ export default class MockQuery<T = DocumentData> implements Query<T> {
   /**
    * Creates and returns a new Query that ends before the provided document
    * (exclusive). The end position is relative to the order of the query. The
-   * document must contain all of the fields provided in the orderBy of this
+   * document must contain all the fields provided in the orderBy of this
    * query.
    *
    * @param snapshot The snapshot of the document to end before.
@@ -267,7 +267,7 @@ export default class MockQuery<T = DocumentData> implements Query<T> {
   /**
    * Creates and returns a new Query that ends at the provided document
    * (inclusive). The end position is relative to the order of the query. The
-   * document must contain all of the fields provided in the orderBy of this
+   * document must contain all the fields provided in the orderBy of this
    * query.
    *
    * @param snapshot The snapshot of the document to end at.

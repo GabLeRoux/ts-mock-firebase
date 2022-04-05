@@ -53,9 +53,9 @@ export class MockFieldPath implements FieldPath {
 export const documentIdSentinel = new MockFieldPath('DOC_ID_SENTINEL');
 
 /**
- * Create a FieldPath object presentation from dot delimeted string presentation
+ * Create a FieldPath object presentation from dot delimited string presentation
  *
- * @param fieldPath Field path in a dot delimeted presentation
+ * @param fieldPath Field path in a dot delimited presentation
  * @returns FieldPath object representing the given field path in separate items
  */
 export function createFieldPathFromString(fieldPath: string): MockFieldPath {

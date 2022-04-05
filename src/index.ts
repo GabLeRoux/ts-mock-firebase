@@ -391,7 +391,7 @@ declare module '@firebase/app-types' {
 
   export interface MockFirebaseServiceInternals {
     /**
-     * Delete the service and free it's resources - called from
+     * Delete the service and free its resources - called from
      * app.delete().
      */
     delete(): Promise<void>;

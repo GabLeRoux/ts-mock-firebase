@@ -40,7 +40,7 @@ export interface CollectionMocker<T = DocumentData> extends Mocker {
   setDoc(doc: MockDocumentReference<T>): void;
 
   /**
-   * Delete document and return it's index where it was
+   * Delete document and return its index where it was
    */
   deleteDoc(id: string): number;
 
@@ -68,7 +68,7 @@ export interface CollectionMocker<T = DocumentData> extends Mocker {
 
   /**
    * Set all documents of the collection by creating them from a single object
-   * where eact field is a document and fields value is the data in the document
+   * where each field is a document and fields value is the data in the document
    * named by the field.
    */
   setShallowCollection(docs: { [documentId: string]: T }): void;
@@ -286,7 +286,7 @@ export class MockCollectionReference<T = DocumentData> implements CollectionRefe
   /**
    * Creates and returns a new Query that starts at the provided document
    * (inclusive). The starting position is relative to the order of the query.
-   * The document must contain all of the fields provided in the orderBy of
+   * The document must contain all the fields provided in the orderBy of
    * this query.
    *
    * @param snapshot The snapshot of the document to start at.
@@ -312,7 +312,7 @@ export class MockCollectionReference<T = DocumentData> implements CollectionRefe
   /**
    * Creates and returns a new Query that starts after the provided document
    * (exclusive). The starting position is relative to the order of the query.
-   * The document must contain all of the fields provided in the orderBy of
+   * The document must contain all the fields provided in the orderBy of
    * this query.
    *
    * @param snapshot The snapshot of the document to start after.
@@ -337,7 +337,7 @@ export class MockCollectionReference<T = DocumentData> implements CollectionRefe
   /**
    * Creates and returns a new Query that ends before the provided document
    * (exclusive). The end position is relative to the order of the query. The
-   * document must contain all of the fields provided in the orderBy of this
+   * document must contain all the fields provided in the orderBy of this
    * query.
    *
    * @param snapshot The snapshot of the document to end before.
@@ -361,7 +361,7 @@ export class MockCollectionReference<T = DocumentData> implements CollectionRefe
   /**
    * Creates and returns a new Query that ends at the provided document
    * (inclusive). The end position is relative to the order of the query. The
-   * document must contain all of the fields provided in the orderBy of this
+   * document must contain all the fields provided in the orderBy of this
    * query.
    *
    * @param snapshot The snapshot of the document to end at.

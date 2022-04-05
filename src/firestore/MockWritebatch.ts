@@ -17,10 +17,10 @@ import { parseFieldValuePairsFromArgs, setFieldValuePairs } from './utils';
 import { NotImplementedYet } from './utils/NotImplementedYet';
 
 /**
- * A write batch, used to perform multiple writes as a single atomic unit.
+ * Write batch is used to perform multiple writes as a single atomic unit.
  *
  * A `WriteBatch` object can be acquired by calling `Firestore.batch()`. It
- * provides methods for adding writes to the write batch. None of the
+ * provides methods for adding writes to write batch. None of the
  * writes will be committed (or visible locally) until `WriteBatch.commit()`
  * is called.
  *
@@ -117,9 +117,9 @@ export class MockWriteBatch implements WriteBatch {
   }
 
   /**
-   * Commits all of the writes in this write batch as a single atomic unit.
+   * Commits all the writes in this write batch as a single atomic unit.
    *
-   * @return A Promise resolved once all of the writes in the batch have been
+   * @return A Promise resolved once all the writes in the batch have been
    * successfully written to the backend as an atomic unit. Note that it won't
    * resolve while you're offline.
    */
